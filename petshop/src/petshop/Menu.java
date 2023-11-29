@@ -3,7 +3,7 @@ package petshop;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class menu {
+public class Menu {
 
 	static Scanner leia = new Scanner(System.in);
 
