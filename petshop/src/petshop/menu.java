@@ -8,13 +8,12 @@ public class menu {
 	static Scanner leia = new Scanner(System.in);
 
 	public static void main(String[] args) {
-		
-		
+
 		int opcao = 0, idProduto, tipo;
 		String nome, alimentos, higiene;
 		float preco;
-		
-		while(true) {
+
+		while (true) {
 			System.out.println("-------------------------------------");
 			System.out.println("               PetShop               ");
 			System.out.println("-------------------------------------");
@@ -26,57 +25,58 @@ public class menu {
 			System.out.println("              6 - Sair               ");
 			System.out.println("-------------------------------------");
 			System.out.println("Insira opção desejada:               ");
-			
-			opcao=leia.nextInt();
-			
-			switch(opcao) {
+
+			opcao = leia.nextInt();
+
+			switch (opcao) {
 			case 1 -> {
 				System.out.println("Cadastrar um produto");
-			
+
 				keyPress();
 				break;
 			}
-			case 2 ->{
+			case 2 -> {
 				System.out.println("Listar todos os produtos.");
-			
+
 				keyPress();
 				break;
 			}
 			case 3 -> {
 				System.out.println("Pesquisar produto por número/ID");
-				
+
 				keyPress();
 				break;
 			}
-			
+
 			case 4 -> {
 				System.out.println("Atualizar produto");
-				
+
 				keyPress();
 				break;
 			}
-			
+
 			case 5 -> {
 				System.out.println("Remover produto");
-				
+
 				keyPress();
 				break;
 			}
-			case 6 ->{
+			case 6 -> {
 				System.out.println("Encerrar atendimento");
-			
+
 				keyPress();
 				break;
 			}
-			
+
 			default -> {
 				System.out.println("Opção inválida.");
-				
-				keyPress();			
+
+				keyPress();
 				break;
 			}
 			}
-		}}
+		}
+	}
 
 	public static void sobre() {
 
@@ -97,7 +97,7 @@ public class menu {
 
 		} catch (IOException e) {
 
-			System.out.println("Você pressionou uma tecla inválida!");
+			System.out.println("Você pressionou uma tecla inválida!!");
 		}
 	}
 
